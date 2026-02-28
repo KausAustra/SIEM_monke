@@ -14,14 +14,6 @@
 3. Добавьте код: скопируйте содержимое файла SIEM_monkey.user.js, вставьте его в редактор расширения и сохраните (Ctrl+S).
 4. Готово: обновите страницу с событиями SIEM, чтобы изменения вступили в силу.
 
-graph TD
-    A[Страница MaxPatrol SIEM] --> B{SIEM_monke активен?}
-    B -- Да --> C[Отрисовка Smart Sidebar]
-    C --> D[Инъекция быстрых фильтров]
-    B -- Да --> E[Сканирование полей .parent.]
-    E --> F[Создание кликабельных ссылок]
-    F --> G[Быстрый переход к родителю]
-
 ---
 
 A lightweight Tampermonkey script to enhance your MaxPatrol SIEM experience.
